@@ -62,7 +62,7 @@ class AuthController extends Controller
                 'email' => $request->email,
                 'phone' => $request->phone,
                 'password' => Hash::make($request->password),
-                'profile_type' => $request->profile_type,
+                'profile_type' => 'App\\Models\\' . ucfirst($request->profile_type),
                 'profile_id' => $profile->id,
                 'is_active' => true
             ]);

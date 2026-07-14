@@ -16,6 +16,7 @@ class Locataire extends Model
         'nom',
         'prenom',
         'email',
+        'password',
         'telephone',
         'telephone_urgence',
         'whatsapp',
